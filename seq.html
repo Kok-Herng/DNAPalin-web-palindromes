@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html >
+    <head>
+        <!--Link of icon in the html page-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- CSS link of the html page's html-->
+        <link rel="stylesheet" href="/./siv3009/idzhar/style/css_index.css">
+        <title>DNAPAlin</title>
+    </head>
+    <body>
+        <!--Icon of our web page application labeled with the name of web page-->
+        <div align= center>
+            <img src="/./siv3009/idzhar/image/dna.png" class="icon" >
+            <h2><b>DNAPalin</b></h2>
+        </div>
+
+        <!--Navigation bar of where user could navigate into index page and sequence analysis page--> 
+        <div class=" topnav">
+            <a href="index.html" target="_self"><i class="fa fa-fw fa-home"></i>DNAPalin</a>
+            <a href="seq.html" target="_self">Sequence Analysis</a>
+            <a href="" target="_self" onclick="alert('Still Updating!')">Contact</a>
+        </div>
+        <!--Instruction for user to enter palindromic sequence or files--> 
+        <h2><b>Finding Palindrome</b></h2>
+        <p><b>Note :</b> Please enter the sequence or upload files containing the sequence</p><br>
+        
+        <div align=left>
+            <table>
+                <tr><td>
+                <!--form to input sequence or file for searching the palindrome of sequence -->
+                <form id="form1" action="/test-cgi/siv3009/idzhar/result.cgi" method=post >
+                    <!--User enter the sequence manually into the text area-->    
+                    <legend>Enter your input sequences</legend><br>
+                        <input type="radio" name="fastaRaw" id="fastaRaw" value="fastaRaw">
+                        <!--User need to select type of file/sequence based on the inputed file/sequence-->
+                        <label for="fastaRaw">Raw Fasta</label><br>
+                        <input type="radio" name="genbankRaw" id="genbankRaw" value="genbankRaw">
+                        <label for="genbankRaw">Raw Genbank</label><br>
+                        <textarea name="sequence" id="sequence" cols="100" rows="10"></textarea><br><br>
+                        <!--User upload either Fasta file or Genbank file-->
+                        <label for="choose">Or, upload a file in FASTA or Genbank format:</label>
+                        <input type="file" id="upload" name="filename"><br>
+                        <!--User enter the minimum length of palindrome -->
+                        <label for="minLength">Please enter the desired minimum length for your palindrome(s): </label>
+                        <input type="text" name="minLength" id="minLength"><br>
+                        <!--Execute the palindrome search of the sequence -->
+                        <input type="submit" class="button" value="Run">&nbsp;&nbsp;
+                        <!--Delete the sequence written in the text form and remove the inputed file-->
+                        <input type ="reset" class="button">&nbsp;&nbsp;
+                        <!--Close the web page when user want to exit the web page-->
+                        <button type ="button" class="button" value="cancel" onClick=history.go(-1); return true;>Cancel</button>
+                </form>
+                </td></tr>
+            </table>
+        </div><br><br><br>  
+        <!--Copyright statement of web page as footer-->
+        <footer>
+            <p>All rights reserved by DNAPalin</p>
+        </footer>
+
+    </body>
+    </html>

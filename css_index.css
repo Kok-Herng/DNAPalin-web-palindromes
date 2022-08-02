@@ -1,0 +1,90 @@
+
+
+body {
+  margin: 0;
+  padding-left: 300px;
+  padding-right: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  padding-top: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f88d1bf5;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+legend {
+  background-color:  #f88d1bf5;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px; 
+
+}
+#form1 { 
+border-radius: 5px; 
+background-color: #f4d9a3f5; 
+border-color:black;
+padding: 10px;
+width: 915px; 
+
+}
+textarea{
+  width:890px;
+  height:200px;
+}
+
+
+input[type=submit] {
+  color: white;
+  background-color: #f88d1bf5;
+  padding: 5px 10px;
+  font-size: 13px;
+  border:none;
+
+  float: right;
+  cursor: pointer;}
+
+button{
+  color: white;
+  background-color: #f88d1bf5;
+  padding: 5px 10px;
+  border:5px;
+  font-size: 13px;
+  float: left;
+  cursor: pointer;}
+
+
+footer {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #f88d1bf5;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+h2,p {
+  padding: 10px;
+}
+
+   
